@@ -14,7 +14,7 @@
  $name = "$firstName $lastName ($pronouns)";
  if ($fetched && isset($name)) {
    echo "<h2>Welcome to Coffee Shop Inventory Helper, $name</h2>\n";
-   $_SESSION['login'] = $name;
+   $_SESSION['login'] = true;
     $_SESSION['emailAddress'] = $emailAddress;
     $_SESSION['firstName'] = $firstName;
     $_SESSION['lastName'] = $lastName;

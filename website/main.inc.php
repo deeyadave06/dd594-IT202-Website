@@ -16,7 +16,7 @@ if (!isset($_SESSION['login'])) {
   </form>
 <?php
 } else {
-   echo "<h2>Welcome to Coffee Shop Inventory Helper, {$_SESSION['login']}</h2>";
+   echo "<h2>Welcome to Coffee Shop Inventory Helper, {$_SESSION['firstName']} {$_SESSION['lastName']} ({$_SESSION['pronouns']})</h2>";
 ?>
    <br><br>
    <p>This program tracks category and item inventory</p>

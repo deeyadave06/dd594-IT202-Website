@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Web Page Title</title>
+    <title>Coffee Shop Inventory Website</title>
   </head>
   <body>
-    <h1>Coffee Managers</h1>
+    <h1>Login to the Coffee Shop Inventory Website</h1>
   </body>
 </html>
