@@ -1,4 +1,11 @@
 <?php
+/*
+Deeya Dave
+October 3, 2025
+IT-202-003 Internet Applications
+Phase 1 Assignment: Login and Logout
+dd594@njit.edu
+*/
  error_log("\$_POST " . print_r($_POST, true));
  require_once('database.php');
  $emailAddress = $_POST['emailAddress'];

@@ -1,3 +1,8 @@
+-- Deeya Dave
+-- October 3, 2025
+-- IT-202-003 Internet Applications
+-- Phase 1 Assignment: Login and Logout
+-- dd594@njit.edu
 SHOW DATABASES;
 USE dd594;
 CREATE TABLE CoffeeManagers (
