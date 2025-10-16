@@ -1,0 +1,32 @@
+POST http://localhost:3000/addcoffee.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CoffeeID=3006
+&CoffeeCode=CAP002
+&CoffeeName=Cappuccino
+&CoffeeTypeID=300
+&CoffeeDescription=Hot with milk foam
+&CoffeeOrigin=Italy
+&CoffeeRoastLevel=Medium
+&CoffeeWholesalePrice=9.00
+&CoffeeListPrice=12.00
+###
+GET http://localhost:3000/listcoffees.test.php
+###
+POST http://localhost:3000/changecoffee.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CoffeeID=3006
+&CoffeeCode=CAP002
+&CoffeeName=Iced Cappuccino
+&CoffeeTypeID=300
+&CoffeeDescription=Iced with milk foam
+&CoffeeOrigin=Italy
+&CoffeeRoastLevel=Medium
+&CoffeeWholesalePrice=10.50
+&CoffeeListPrice=12.50
+###
+POST http://localhost:3000/removecoffee.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CoffeeID=3006

@@ -1,0 +1,22 @@
+POST http://localhost:3000/addcoffeetype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CoffeeTypeID=400
+&CoffeeTypeCode=CAP
+&CoffeeTypeName=Cappuccino
+&CoffeeTypeAisleNumber=6
+###
+GET http://localhost:3000/listcoffeetypes.test.php
+###
+POST http://localhost:3000/changecoffeetype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CoffeeTypeID=400
+&CoffeeTypeCode=AFF
+&CoffeeTypeName=Affogato
+&CoffeeTypeAisleNumber=5
+###
+POST http://localhost:3000/removecoffeetype.test.php
+Content-Type: application/x-www-form-urlencoded
+
+CoffeeTypeID=400
