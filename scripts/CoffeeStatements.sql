@@ -1,3 +1,9 @@
+-- Deeya Dave
+-- October 16, 2025
+-- IT-202-003 Internet Applications
+-- Phase 2 Assignment: CRUD Categories and Items
+-- dd594@njit.edu
+
 -- Items Table
 CREATE TABLE Coffees (
 CoffeeID               INT(11)        NOT NULL,
