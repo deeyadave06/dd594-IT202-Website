@@ -1,9 +1,9 @@
 <?php
 /*
 Deeya Dave
-October 16, 2025
+October 31, 2025
 IT-202-003 Internet Applications
-Phase 2 Assignment: CRUD Categories and Items
+Phase 3 Assignment: HTML Website Layout
 dd594@njit.edu
 */
 require_once('database.php');
@@ -42,14 +42,16 @@ class Item
    }
    function __toString()
    {
-       $output = "<h2>Coffee ID: $this->CoffeeID</h2>" .
+        $wholesalePrice = number_format($this->CoffeeWholesalePrice, 2);
+        $listPrice = number_format($this->CoffeeListPrice, 2);
+        $output = "<h2>Coffee ID: $this->CoffeeID</h2>" .
             "<h2>Coffee Code: $this->CoffeeCode</h2>\n" .
             "<h2>Name: $this->CoffeeName</h2>\n" .
             "<h2>Description: $this->CoffeeDescription</h2>\n" .
             "<h2>Origin: $this->CoffeeOrigin</h2>\n" .
             "<h2>Roast Level: $this->CoffeeRoastLevel</h2>\n" .
-            "<h2>Wholesale Price: $this->CoffeeWholesalePrice</h2>\n" .
-            "<h2>Coffee Type ID: $this->CoffeeTypeID at $this->CoffeeListPrice</h2>\n";
+            "<h2>Wholesale Price: $$wholesalePrice</h2>\n" .
+            "<h2>Coffee Type ID: $this->CoffeeTypeID at $$listPrice</h2>\n";
        return $output;
    }
    function saveCoffee()
@@ -155,6 +157,34 @@ function updateCoffee()
        $result = $db->query($query);
        $db->close();
        return $result;
+   }
+      static function getCoffeesByCoffeeType($CoffeeTypeID)
+   {
+       $db = getDB();
+       $query = "SELECT * from Coffees where CoffeeTypeID = $CoffeeTypeID";
+       $result = $db->query($query);
+       if (mysqli_num_rows($result) > 0) {
+           $coffees = array();
+           while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
+               $coffee = new Item(
+                   $row['CoffeeID'],
+                   $row['CoffeeCode'],
+                   $row['CoffeeName'],
+                   $row['CoffeeDescription'],
+                   $row['CoffeeOrigin'],
+                   $row['CoffeeRoastLevel'],
+                   $row['CoffeeTypeID'],
+                   $row['CoffeeWholesalePrice'],
+                   $row['CoffeeListPrice']
+               );
+               array_push($coffees, $coffee);
+           }
+           $db->close();
+           return $coffees;
+       } else {
+           $db->close();
+           return NULL;
+       }
    }
 
 }

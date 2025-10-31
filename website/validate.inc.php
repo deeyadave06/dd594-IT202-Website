@@ -1,9 +1,9 @@
 <?php
 /*
 Deeya Dave
-October 3, 2025
+October 31, 2025
 IT-202-003 Internet Applications
-Phase 1 Assignment: Login and Logout
+Phase 3 Assignment: HTML Website Layout
 dd594@njit.edu
 */
  error_log("\$_POST " . print_r($_POST, true));
@@ -21,7 +21,7 @@ dd594@njit.edu
  $name = "$firstName $lastName ($pronouns)";
  if ($fetched && isset($name)) {
    echo "<h2>Welcome to Coffee Shop Inventory Helper, $name</h2>\n";
-   $_SESSION['login'] = true;
+   $_SESSION['login'] = $name;
     $_SESSION['emailAddress'] = $emailAddress;
     $_SESSION['firstName'] = $firstName;
     $_SESSION['lastName'] = $lastName;

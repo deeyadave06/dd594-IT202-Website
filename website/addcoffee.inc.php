@@ -1,12 +1,13 @@
 <?php
 /*
 Deeya Dave
-October 16, 2025
+October 31, 2025
 IT-202-003 Internet Applications
-Phase 2 Assignment: CRUD Categories and Items
+Phase 3 Assignment: HTML Website Layout
 dd594@njit.edu
 */
 require_once('coffee.php');
+if (isset($_SESSION['login'])) {
 $CoffeeID = $_POST['CoffeeID'];
 if ((trim($CoffeeID) == '') or (!is_numeric($CoffeeID))) {
    echo "<h2>Sorry, you must enter a valid coffee ID number</h2>\n";
@@ -36,5 +37,8 @@ if ((trim($CoffeeID) == '') or (!is_numeric($CoffeeID))) {
        echo "<h2>New coffee #$CoffeeID successfully added</h2>\n";
    else
        echo "<h2>Sorry, there was a problem adding that coffee</h2>\n";
+}
+} else {
+   echo "<h2>Please login first</h2>\n";
 }
 ?>

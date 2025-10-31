@@ -1,7 +1,7 @@
 -- Deeya Dave
--- October 16, 2025
+-- October 31, 2025
 -- IT-202-003 Internet Applications
--- Phase 2 Assignment: CRUD Categories and Items
+-- Phase 3 Assignment: HTML Website Layout
 -- dd594@njit.edu
 
 -- Items Table
