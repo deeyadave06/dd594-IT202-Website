@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: sql1.njit.edu
--- Generation Time: Oct 31, 2025 at 07:11 PM
+-- Generation Time: Nov 20, 2025 at 05:02 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.4.8
 
@@ -55,12 +55,13 @@ INSERT INTO `Coffees` (`CoffeeID`, `CoffeeCode`, `CoffeeName`, `CoffeeDescriptio
 (2003, 'CLD003', 'Nitro Cold Brew', 'Charged with nitrogen for creaminess.', 'USA', 'Dark', 200, 11.00, 14.50, '2025-10-16 02:33:11', '2025-10-16 02:33:11'),
 (2004, 'CLD004', 'Mocha Cold Brew', 'Cold brew with chocolate flavor.', 'Canada', 'Medium', 200, 8.99, 12.50, '2025-10-16 02:33:11', '2025-10-16 02:33:11'),
 (2005, 'CLD005', 'Vietnamese Cold Brew', 'Sweetened and creamy cold brew.', 'Vietnam', 'Dark', 200, 14.50, 17.00, '2025-10-16 02:33:11', '2025-10-16 02:33:11'),
+(2006, 'CBR006', 'Drip Cold Brew', 'Cold water is slowly dripped over coffee grounds to extract the flavor. Extracts flavor layer by layer', 'Japan', 'Dark', 206, 11.99, 14.99, '2025-11-20 16:30:43', '2025-11-20 16:30:43'),
 (3001, 'LAT001', 'Iced Latte', 'Cold coffee with extra milk.', 'Italy', 'Medium', 300, 7.50, 10.50, '2025-10-16 02:33:11', '2025-10-16 02:33:11'),
 (3002, 'LAT002', 'Vanilla Latte', 'Latte with vanilla syrup.', 'USA', 'Medium', 300, 8.00, 11.00, '2025-10-16 02:33:11', '2025-10-16 02:33:11'),
 (3003, 'LAT003', 'Caramel Latte', 'Sweet latte with caramel syrup.', 'USA', 'Medium', 300, 8.00, 11.00, '2025-10-16 02:33:11', '2025-10-16 02:33:11'),
 (3004, 'LAT004', 'Pumpkin Spice Latte', 'Seasonal latte with pumpkin spices.', 'USA', 'Light', 300, 9.25, 13.50, '2025-10-16 02:33:11', '2025-10-16 02:33:11'),
 (3005, 'LAT005', 'Hazelnut Latte', 'Latte with hazelnut flavoring.', 'Turkey', 'Medium', 300, 9.00, 12.00, '2025-10-16 02:33:11', '2025-10-16 02:33:11'),
-(3006, 'LAT006', 'Lavender Latte', 'Made with espresso, lavender, and steamed milk. Topped with frothed milk foam.', 'Italy', 'Medium', 300, 7.00, 10.00, '2025-10-31 17:16:06', '2025-10-31 17:40:41');
+(3006, 'LAT006', 'Hot Latte', 'Warm and milky. Lots of steamed milk and topped with a thin layer of foam.', 'Italy', 'Medium', 300, 9.99, 12.99, '2025-11-20 12:16:45', '2025-11-20 17:00:16');
 
 --
 -- Indexes for dumped tables
