@@ -6,7 +6,6 @@ IT-202-003 Internet Applications
 Phase 4 Assignment: Input Filtering and CSS Styling
 dd594@njit.edu
 */
-session_start();
 
 $_SESSION = [];
 
