@@ -1,9 +1,9 @@
 <?php
 /*
 Deeya Dave
-October 31, 2025
+November 21, 2025
 IT-202-003 Internet Applications
-Phase 3 Assignment: HTML Website Layout
+Phase 4 Assignment: Input Filtering and CSS Styling
 dd594@njit.edu
 */
 ?>
@@ -15,19 +15,19 @@ dd594@njit.edu
    <table cellpadding="1" border="0">
        <tr>
            <td>Coffee Type ID:</td>
-           <td><input type="text" name="CoffeeTypeID" size="4"></td>
+           <td><input type="number" name="CoffeeTypeID" size="4" min="1" max="999" required></td>
        </tr>
        <tr>
            <td>Coffee Type Code:</td>
-           <td><input type="text" name="CoffeeTypeCode" size="20"></td>
+           <td><input type="text" name="CoffeeTypeCode" placeholder="XXX" minlength="3" maxlength="10" required></td>
        </tr>
        <tr>
            <td>Coffee Type Name:</td>
-           <td><input type="text" name="CoffeeTypeName" size="50"></td>
+           <td><input type="text" name="CoffeeTypeName" size="50" minlength="10" maxlength="100" required></td>
         </tr>
         <tr>
            <td>Coffee Type Aisle Number:</td>
-           <td><input type="text" name="CoffeeTypeAisleNumber" size="50"></td>
+           <td><input type="text" name="CoffeeTypeAisleNumber" size="50" minlength="1" maxlength="10" required></td>
        </tr>
    </table><br>
    <input type="submit" value="Submit New Coffee Type">

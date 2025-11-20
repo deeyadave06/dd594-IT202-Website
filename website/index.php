@@ -1,18 +1,23 @@
 <?php
 /*
 Deeya Dave
-October 31, 2025
+November 21, 2025
 IT-202-003 Internet Applications
-Phase 3 Assignment: HTML Website Layout
+Phase 4 Assignment: Input Filtering and CSS Styling
 dd594@njit.edu
 */
 session_start();
+require_once("config.php");
 require_once("coffee.php");
 require_once("coffeetype.php");
 ?>
 <!DOCTYPE html>
 <html>
-<head><title>Coffee Shop Inventory Website</title></head>
+<head>
+    <title>Coffee Shop Inventory Website</title>
+    <link rel="stylesheet" type="text/css" href="ih_styles.css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+</head>
 <body>
     <header>
        <?php include("header.inc.php"); ?>

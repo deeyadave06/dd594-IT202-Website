@@ -1,9 +1,9 @@
 <?php
 /*
 Deeya Dave
-October 31, 2025
+November 21, 2025
 IT-202-003 Internet Applications
-Phase 3 Assignment: HTML Website Layout
+Phase 4 Assignment: Input Filtering and CSS Styling
 dd594@njit.edu
 */
 require_once('coffee.php');
@@ -12,14 +12,14 @@ $CoffeeID = $_POST['CoffeeID'];
 if ((trim($CoffeeID) == '') or (!is_numeric($CoffeeID))) {
    echo "<h2>Sorry, you must enter a valid coffee ID number</h2>\n";
 } else {
-   $CoffeeName = $_POST['CoffeeName'];
-   $CoffeeTypeID = $_POST['CoffeeTypeID'];
-   $CoffeeListPrice = $_POST['CoffeeListPrice'];
-   $CoffeeDescription = $_POST['CoffeeDescription'];
-   $CoffeeOrigin = $_POST['CoffeeOrigin'];
-   $CoffeeRoastLevel = $_POST['CoffeeRoastLevel'];
-   $CoffeeWholesalePrice = $_POST['CoffeeWholesalePrice'];
-   $CoffeeCode = $_POST['CoffeeCode'];
+   $CoffeeName = htmlspecialchars($_POST['CoffeeName']);
+   $CoffeeTypeID = htmlspecialchars($_POST['CoffeeTypeID']);
+   $CoffeeListPrice = htmlspecialchars($_POST['CoffeeListPrice']);
+   $CoffeeDescription = htmlspecialchars($_POST['CoffeeDescription']);
+   $CoffeeOrigin = htmlspecialchars($_POST['CoffeeOrigin']);
+   $CoffeeRoastLevel = htmlspecialchars($_POST['CoffeeRoastLevel']);
+   $CoffeeWholesalePrice = htmlspecialchars($_POST['CoffeeWholesalePrice']);
+   $CoffeeCode = htmlspecialchars($_POST['CoffeeCode']);
 
    $item = new Item(
        $CoffeeID,

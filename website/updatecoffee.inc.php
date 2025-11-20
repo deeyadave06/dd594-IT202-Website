@@ -1,9 +1,9 @@
 <?php
 /*
 Deeya Dave
-October 31, 2025
+November 21, 2025
 IT-202-003 Internet Applications
-Phase 3 Assignment: HTML Website Layout
+Phase 4 Assignment: Input Filtering and CSS Styling
 dd594@njit.edu
 */
 if (!isset($_POST['CoffeeID']) or (!is_numeric($_POST['CoffeeID']))) {
@@ -29,7 +29,7 @@ if (!isset($_POST['CoffeeID']) or (!is_numeric($_POST['CoffeeID']))) {
                </tr>
                <tr>
                    <td>Coffee Type ID</td>
-               <td><input type="text" name="CoffeeTypeID" value="<?php echo $Coffee->CoffeeTypeID; ?>"></td>
+               <td><input type="number" name="CoffeeTypeID" value="<?php echo $Coffee->CoffeeTypeID; ?>"></td>
                </tr>
                <tr>
                 <td>Coffee Code</td>
@@ -49,11 +49,11 @@ if (!isset($_POST['CoffeeID']) or (!is_numeric($_POST['CoffeeID']))) {
                </tr>
                <tr>
                 <td>Coffee Wholesale Price</td>
-                   <td><input type="text" name="CoffeeWholesalePrice" value="<?php echo $Coffee->CoffeeWholesalePrice; ?>"></td>
+                   <td><input type="number" name="CoffeeWholesalePrice" value="<?php echo $Coffee->CoffeeWholesalePrice; ?>"></td>
                </tr>
                <tr>
                    <td>List Price</td>
-                 <td><input type="text" name="CoffeeListPrice" value="<?php echo $Coffee->CoffeeListPrice; ?>"></td>
+                 <td><input type="number" name="CoffeeListPrice" value="<?php echo $Coffee->CoffeeListPrice; ?>"></td>
                </tr>
            </table><br><br>
            <input type="submit" name="answer" value="Update Coffee">

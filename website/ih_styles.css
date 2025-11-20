@@ -1,0 +1,149 @@
+/*
+Deeya Dave
+November 21, 2025
+IT-202-003 Internet Applications
+Phase 4 Assignment: Input Filtering and CSS Styling
+dd594@njit.edu
+*/
+body {
+   font-family: Geneva, Tahoma, sans-serif;
+   font-size: 80%;
+   background-color: #efe3d4;
+   color: #4b2e1e;
+   margin: 0px;
+   padding: 0px;
+   overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+   margin: 0px;
+   padding: 0px;
+}
+
+h1 {
+   font-family: Verdana, Arial, sans-serif;
+   font-size: 120%;
+   color: #4b2e1e;
+}
+
+h2 {
+   font-family: Geneva, Tahoma, sans-serif;
+   font-size: 120%;
+   color: #4b2e1e;
+}
+
+h3 {
+   font-family: Geneva, Tahoma, sans-serif;
+   font-size: 110%;
+   color: #f7f1e8;
+}
+
+h4 {
+   font-family: Geneva, Tahoma, sans-serif;
+   font-size: 100%;
+   color: #4b2e1e;
+}
+
+footer {
+   font-family: Geneva, Tahoma, sans-serif;
+   font-size: 80%;
+   background-color: #3a2418;
+   color: #f7f1e8;
+   padding: 5px;
+   border-top: 3px solid #efe3d4;
+   border-bottom: 3px solid #efe3d4;
+}
+
+main {
+   padding: 5px;
+   border-top: 3px solid #efe3d4;
+   float: left;
+   width: 55%;
+   height: 100%;
+}
+
+main table {
+   padding: 2px;
+}
+
+main td {
+   padding: 2px;
+}
+
+header {
+   padding: 5px;
+   border-bottom: 3px solid #efe3d4;
+   height: 40px;
+   width: 100%;
+}
+
+.navigation {
+   padding: 5px;
+   border-bottom: 1px solid #efe3d4;
+   border-right: 1px solid #efe3d4;
+   border-top: 1px solid #efe3d4;
+   border-left: 5px solid #efe3d4;
+   color: #f7f1e8;
+   background-color: #8c5a3a;
+   width: 20%;
+}
+
+footer {
+ clear: both;
+ text-align: center;
+ width: 100%;
+}
+
+a, a:link {
+ color: #b87441;
+}
+
+a:active {
+ color: #6a4b3a;
+}
+
+nav a, nav a:link {
+ color: #f7e1c4;
+ text-decoration: none;
+}
+
+nav a:visited {
+ color: #d8c5b3;
+}
+
+nav a:hover {
+ color: #caa999;
+}
+
+nav a:active {
+ color: #6a4b3a;
+}
+
+input {
+ border: 2px solid #6a4b3a;
+ background-color: #f7f1e8;
+ color: #4b2e1e;
+ border-radius: 5px;
+}
+
+input[type=submit] {
+ font-family: Verdana, Arial, sans-serif;
+ font-size: 80%;
+}
+
+input:required:invalid {
+ border-color: #8c5a3a;
+ background-color: #f1c9a1;
+}
+
+input:required:valid {
+ border-color: #d8c5b3;
+ background-color: #efe3d4;
+}
+
+input:focus {
+ outline: none;
+ border-color: #b87441;
+ background-color: #e4c2a4;
+ box-shadow: 0 0 5px #b87441;
+}

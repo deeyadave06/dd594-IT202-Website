@@ -1,15 +1,16 @@
 <?php
 /*
 Deeya Dave
-October 31, 2025
+November 21, 2025
 IT-202-003 Internet Applications
-Phase 3 Assignment: HTML Website Layout
+Phase 4 Assignment: Input Filtering and CSS Styling
 dd594@njit.edu
 */
  error_log("\$_POST " . print_r($_POST, true));
  require_once('database.php');
- $emailAddress = $_POST['emailAddress'];
+ $emailAddress = htmlspecialchars($_POST['emailAddress']);
  $password = $_POST['password'];
+ if (filter_var($emailAddress, FILTER_VALIDATE_EMAIL)){
  $query = "SELECT firstName, lastName, pronouns FROM CoffeeManagers " .
         "WHERE emailAddress = ? AND password = SHA2(?,256)";
  $db = getDB();
@@ -31,4 +32,8 @@ dd594@njit.edu
    echo "<h2>Sorry, login incorrect for Coffee Shop Inventory Helper</h2>\n";
    echo "<a href=\"index.php\">Please try again</a>\n";
  }
+ } else {
+  echo "<h2>Please enter a valid email address</h2>\n";
+  echo '<a href="index.php">Please try again</a>';
+}
 ?>

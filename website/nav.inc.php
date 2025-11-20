@@ -1,9 +1,9 @@
   <?php
-  /*
+/*
 Deeya Dave
-October 31, 2025
+November 21, 2025
 IT-202-003 Internet Applications
-Phase 3 Assignment: HTML Website Layout
+Phase 4 Assignment: Input Filtering and CSS Styling
 dd594@njit.edu
 */
    if (isset($_SESSION['login'])) {
@@ -14,10 +14,12 @@ dd594@njit.edu
          echo "<td><h3>Welcome, {$_SESSION['login']}</h3></td>";
          ?>
         <tr>
-          <td><a href="index.php"><strong>Home</strong></a></td>
+          <td><img src="images/home.jpg" alt="Home Icon" width="12" height="12">&nbsp;
+          <a href="index.php"><strong>Home</strong></a></td>
         </tr>
         <tr>
-          <td><strong>Coffee Types</strong></td>
+          <td><img src="images/coffeetypes.png" alt="Categories Icon" width="12" height="12">&nbsp;
+            <strong>Coffee Types</strong></td>
         </tr>
         <tr>
           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=listcoffeetypes">
@@ -28,7 +30,8 @@ dd594@njit.edu
               <strong>Add New Coffee Type</strong></a></td>
         </tr>
         <tr>
-          <td><strong>Coffees</strong></td>
+          <td><img src="images/coffees.jpg" alt="Items Icon" width="12" height="12">&nbsp;
+            <strong>Coffees</strong></td>
         </tr>
         <tr>
           <td>&nbsp;&nbsp;&nbsp;<a href="index.php?content=listcoffees">
@@ -45,6 +48,8 @@ dd594@njit.edu
         </tr>
         <tr>
           <td><a href="index.php?content=logout">
+                   <img src="images/logout.png" alt="Logout Icon" width="12" height="12"></a>&nbsp;
+            <a href="index.php?content=logout">
               <strong>Logout</strong></a></td>
         </tr>
         <tr>
