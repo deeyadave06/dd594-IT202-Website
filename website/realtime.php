@@ -1,4 +1,11 @@
 <?php
+/*
+Deeya Dave
+December 05, 2025
+IT-202-003 Internet Applications
+Phase 5 Assignment: JavaScript
+dd594@njit.edu
+*/
 ob_start();
 include("coffeetype.php");
 include("coffee.php");

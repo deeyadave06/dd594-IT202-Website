@@ -1,3 +1,12 @@
+<?php
+/*
+Deeya Dave
+December 05, 2025
+IT-202-003 Internet Applications
+Phase 5 Assignment: JavaScript
+dd594@njit.edu
+*/
+?>
 <style>
   aside {
      font-family: Geneva, Tahoma, sans-serif;

@@ -1,4 +1,11 @@
 <?php
+/*
+Deeya Dave
+December 05, 2025
+IT-202-003 Internet Applications
+Phase 5 Assignment: JavaScript
+dd594@njit.edu
+*/
 if (!isset($_REQUEST['CoffeeID']) or (!is_numeric($_REQUEST['CoffeeID']))) {
 ?>
  <h2>You did not select a valid CoffeeID to view.</h2>

@@ -1,3 +1,10 @@
+/*
+Deeya Dave
+December 05, 2025
+IT-202-003 Internet Applications
+Phase 5 Assignment: JavaScript
+dd594@njit.edu
+*/
 function getRealTime() {
  // retrieve the DOM objects to place the content
  var domcategories = document.getElementById("categorycount");
