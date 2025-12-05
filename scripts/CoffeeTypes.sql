@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: sql1.njit.edu
--- Generation Time: Nov 20, 2025 at 05:02 PM
+-- Generation Time: Dec 05, 2025 at 10:16 PM
 -- Server version: 8.0.17
 -- PHP Version: 7.4.8
 
@@ -44,7 +44,7 @@ INSERT INTO `CoffeeTypes` (`CoffeeTypeID`, `CoffeeTypeCode`, `CoffeeTypeName`, `
 (200, 'CLD', 'Cold Brew', 2, '2025-10-16 02:33:52', '2025-10-16 02:33:52'),
 (300, 'LAT', 'Latte', 3, '2025-10-16 02:33:52', '2025-10-16 02:33:52'),
 (400, 'CAP', 'Cappucino', 4, '2025-10-31 17:09:05', '2025-10-31 17:09:05'),
-(500, 'DRIP', 'Drip Coffee', 5, '2025-11-20 16:25:59', '2025-11-20 16:25:59');
+(500, 'DRIP', 'Drip Coffee', 5, '2025-12-05 18:37:16', '2025-12-05 19:00:10');
 
 --
 -- Indexes for dumped tables

@@ -11,7 +11,7 @@ if (isset($_SESSION['login'])) {
 $CoffeeID = $_POST['CoffeeID'];
 $answer = $_POST['answer'];
 if ($answer == "Update Coffee") {
-$item = Item::findCoffee($CoffeeID);
+$item = Coffee::findCoffee($CoffeeID);
 $item->CoffeeID = $_POST['CoffeeID'];
 $item->CoffeeName = $_POST['CoffeeName'];
 $item->CoffeeTypeID = $_POST['CoffeeTypeID'];

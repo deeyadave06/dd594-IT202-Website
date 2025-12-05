@@ -15,7 +15,7 @@ if (!isset($_POST['CoffeeID']) || !is_numeric($_POST['CoffeeID'])) {
 }
 
 $CoffeeID = $_POST['CoffeeID'] ?? null;
-$Coffee = Item::findCoffee($CoffeeID);
+$Coffee = Coffee::findCoffee($CoffeeID);
 
 if (!$Coffee) {
     ?>

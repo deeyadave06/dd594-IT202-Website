@@ -58,7 +58,7 @@ main {
    padding: 5px;
    border-top: 3px solid #efe3d4;
    float: left;
-   width: 55%;
+   width: 75%;
    height: 100%;
 }
 
@@ -147,3 +147,4 @@ input:focus {
  background-color: #e4c2a4;
  box-shadow: 0 0 5px #b87441;
 }
+

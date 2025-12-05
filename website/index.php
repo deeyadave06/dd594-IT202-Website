@@ -6,6 +6,7 @@ IT-202-003 Internet Applications
 Phase 4 Assignment: Input Filtering and CSS Styling
 dd594@njit.edu
 */
+ob_start();
 session_start();
 require_once("config.php");
 require_once("coffee.php");
@@ -14,6 +15,7 @@ require_once("coffeetype.php");
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="realtime.js"></script>
     <title>Coffee Shop Inventory Website</title>
     <link rel="stylesheet" type="text/css" href="ih_styles.css">
     <link rel="icon" type="image/png" href="images/logo.png">
@@ -27,6 +29,15 @@ require_once("coffeetype.php");
            <?php include("nav.inc.php"); ?>
        </nav>
        <main>
+        <?php if (isset($_SESSION['login'])) { ?>
+        <aside>
+           <?php include("aside.inc.php"); ?>
+           <script>
+               getRealTime();
+               setInterval(getRealTime, 5000);
+           </script>
+       </aside>
+       <?php } ?>
            <?php
            if (isset($_REQUEST['content'])) {
                include($_REQUEST['content'] . ".inc.php");
@@ -41,3 +52,6 @@ require_once("coffeetype.php");
    </footer>
 </body>
 </html>
+<?php
+ob_end_flush();
+?>

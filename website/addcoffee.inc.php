@@ -21,7 +21,7 @@ if ((trim($CoffeeID) == '') or (!is_numeric($CoffeeID))) {
    $CoffeeWholesalePrice = htmlspecialchars($_POST['CoffeeWholesalePrice']);
    $CoffeeCode = htmlspecialchars($_POST['CoffeeCode']);
 
-   $item = new Item(
+   $item = new Coffee(
        $CoffeeID,
        $CoffeeCode,
        $CoffeeName,

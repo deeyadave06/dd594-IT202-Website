@@ -16,7 +16,7 @@ if (!isset($_REQUEST['CoffeeTypeID']) or (!is_numeric($_REQUEST['CoffeeTypeID'])
  $category = Category::findCoffeeType($CoffeeTypeID);
  if ($category) {
    echo $category;
-   $items = Item::getCoffeesByCoffeeType($CoffeeTypeID);
+   $items = Coffee::getCoffeesByCoffeeType($CoffeeTypeID);
    if ($items) {
  ?>
      <br><br>

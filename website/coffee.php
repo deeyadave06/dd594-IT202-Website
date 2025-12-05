@@ -7,7 +7,7 @@ Phase 4 Assignment: Input Filtering and CSS Styling
 dd594@njit.edu
 */
 require_once('database.php');
-class Item
+class Coffee
 {
     public $CoffeeID;
     public $CoffeeCode;
@@ -83,7 +83,7 @@ class Item
        if (mysqli_num_rows($result) > 0) {
            $items = array();
            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-               $item = new Item(
+               $item = new Coffee(
                    $row['CoffeeID'],
                     $row['CoffeeCode'],
                     $row['CoffeeName'],
@@ -110,7 +110,7 @@ class Item
        $result = $db->query($query);
        $row = $result->fetch_array(MYSQLI_ASSOC);
        if ($row) {
-           $item = new Item(
+           $item = new Coffee(
                $row['CoffeeID'],
                 $row['CoffeeCode'],
                 $row['CoffeeName'],
@@ -166,7 +166,7 @@ function updateCoffee()
        if (mysqli_num_rows($result) > 0) {
            $coffees = array();
            while ($row = $result->fetch_array(MYSQLI_ASSOC)) {
-               $coffee = new Item(
+               $coffee = new Coffee(
                    $row['CoffeeID'],
                    $row['CoffeeCode'],
                    $row['CoffeeName'],
@@ -186,6 +186,41 @@ function updateCoffee()
            return NULL;
        }
    }
-
+   static function getTotalCoffees()
+   {
+       $db = getDB();
+       $query = "SELECT COUNT(CoffeeID) FROM Coffees";
+       $result = $db->query($query);
+       $row = $result->fetch_array();
+       if ($row) {
+           return $row[0];
+       } else {
+           return NULL;
+       }
+   }
+static function getTotalListPrice()
+{
+    $db = getDB();
+    $query = "SELECT SUM(CoffeeListPrice) FROM Coffees";
+    $result = $db->query($query);
+    $row = $result->fetch_array();
+    if ($row) {
+        return $row[0];
+    } else {
+        return NULL;
+    }
+}
+static function getTotalWholesalePrice()
+{
+    $db = getDB();
+    $query = "SELECT SUM(CoffeeWholesalePrice) FROM Coffees";
+    $result = $db->query($query);
+    $row = $result->fetch_array();
+    if ($row) {
+        return $row[0];
+    } else {
+        return NULL;
+    }
+}
 }
 ?>
